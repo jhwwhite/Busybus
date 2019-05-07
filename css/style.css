@@ -1,4 +1,4 @@
-.container {
+main {
   width: 375px;
   font-family: 'PT Sans Caption', sans-serif;
 }
@@ -12,12 +12,16 @@ header div {
   background-color: white;
   display: inline-block;
 }
-.home {
+.back {
   color: #267f34;
   font-weight: bold;
-  font-size: 17px
+
 }
 
+.back {
+  width: 18px;
+
+}
 .location {
   text-align: center;
   font-size: 17px;
@@ -27,14 +31,6 @@ header div {
   font-weight: bold;
 }
 
-.fontawesome fa-refresh {
-  color: #267f34;
-}
-
-.left-arrow {
-  font-size: 120%;
-  color: #267f34;
-}
 
 li {
  display: flex;
@@ -54,7 +50,7 @@ li {
   border-top: 1px solid #000000;
   border-bottom: 1px solid #DADADA;
   display: flex;
-  padding: 1%;
+  padding: 1% 0 1% 0;
   display: flex;
 }
 
@@ -64,6 +60,15 @@ span {
 
 .stops-list {
   display: flex;
+  border-bottom: 1px solid #DADADA;
+
+}
+
+.refresh {
+  width: 18px;
+  border-right: -30px;
+  align-items: left;
+  padding:5px 0 0 35px;
 
 }
 
@@ -73,14 +78,14 @@ span {
   color: #8E8E93;
   align-items: center;
   text-align: left;
-  border-bottom: 1px solid #DADADA;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   width: 75%
 
 }
 .min {
   font-size: 15px;
   padding-bottom: 8%;
+  margin-top: -10px;
 }
 .Route {
   display: inline-block;
@@ -88,19 +93,21 @@ span {
   text-align: left;
   font-weight: bold;
   color: #8E8E93;
-  width:35%;
+  width:25%;
   margin-left: 3%;
+  margin-top: 3px;
 
 }
 
 .destinatin {
   display: inline-block;
-  align-items: center;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
   color: #8E8E93;
   width: 50%;
-  margin-left: 3%;
+  margin-right: 27px;
+  margin-top: 3px;
+
 
 }
 
@@ -110,8 +117,9 @@ span {
   text-align: right;
   font-weight: bold;
   color: #8E8E93;
-  Width: 22%;
-  margin-right: 3%;
+  Width: 25%;
+  margin-right:20px;
+  margin-top: 3px;
 }
 
 
@@ -120,11 +128,12 @@ span {
   display: inline-block;
   font-weight: bold;
   color: #8E8E93;
-  border-bottom: 1px solid #DADADA;
   width: 25%;
   text-align: center;
-  padding-top: 3%;
-  margin-bottom: 0;
+  padding: 15px 0 20px 0;
+
+
+
 }
 
  .stop-badge {
@@ -134,7 +143,6 @@ span {
    text-align: left;
    font-weight: bold;
    color: #8E8E93;
-   border-bottom: 1px solid #DADADA;
    width: 45%;
    padding-top: 5%;
 
