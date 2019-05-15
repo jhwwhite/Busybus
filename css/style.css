@@ -1,6 +1,7 @@
 main {
   width: 375px;
   font-family: 'PT Sans Caption', sans-serif;
+  margin: auto;
 }
 
 header, footer {
@@ -8,36 +9,37 @@ header, footer {
   color: #fff;
   padding: 10px;
 }
+
 header div {
   background-color: white;
   display: inline-block;
 }
+
+.status-bar{
+  width: 350px;
+}
+
 .back {
   color: #267f34;
   font-weight: bold;
-
+  width: 86%;
+  margin-bottom: -5px;
 }
 
-.back {
-  width: 18px;
-
-}
 .location {
   text-align: center;
   font-size: 17px;
-  margin: auto;
-  width: 65%;
+  margin-left: 29px;
+  width: 50%;
   color: #267f34;
   font-weight: bold;
 }
-
 
 li {
  display: flex;
  margin-left: 15px;
  width: 100%;
  height: 10%;
-
 }
 
 .info {
@@ -49,9 +51,11 @@ li {
   height: 5%;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #DADADA;
-  display: flex;
+  display: inline-flex;
   padding: 1% 0 1% 0;
-  display: flex;
+  color: #8E8E93;
+  font-weight: bold;
+  width: 100%;
 }
 
 span {
@@ -61,54 +65,86 @@ span {
 .stops-list {
   display: flex;
   border-bottom: 1px solid #DADADA;
-
+  height: 73px;
+  align-items: baseline;
 }
 
 .refresh {
   width: 18px;
-  border-right: -30px;
-  align-items: left;
-  padding:5px 0 0 35px;
-
+  margin-left: 30px;
+  align-items: right;
+  padding:10px 0 0 30px;
 }
 
 .stop-info {
-  display: inline-block;
+  display: flex;
+  align-items: left;
+  text-align: left;
   font-weight: bold;
   color: #8E8E93;
-  align-items: center;
-  text-align: left;
-  padding: 20px 0 20px 0;
-  width: 75%
+  height: 36px;
+  width: 75%;
+  flex-direction: column;
+  border: 1px black solid;
+
 
 }
+
 .min {
   font-size: 15px;
-  padding-bottom: 8%;
+  padding-bottom: 10%;
   margin-top: -10px;
+
 }
+
 .Route {
   display: inline-block;
   align-items: center;
   text-align: left;
   font-weight: bold;
   color: #8E8E93;
-  width:25%;
-  margin-left: 3%;
-  margin-top: 3px;
-
+  width:88px;
+  margin-left: -15px;
+  margin-top: 3%;
+  float:left;
 }
 
-.destinatin {
+.destination  {
   display: inline-block;
   text-align: center;
   font-weight: bold;
   color: #8E8E93;
   width: 50%;
-  margin-right: 27px;
-  margin-top: 3px;
+  margin-top: 3%;
+  margin-right: 47px;
+  position: relative;
+}
 
+.resume-service {
+  font-size: 15px;
+  display: flex;
+  font-weight: bold;
+  color: #8E8E93;
+  width: 25%;
+  text-align: center;
+  margin: 5px 0 40px 0;
+  height: 73px;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-end;
+  border: 1px dotted black;
+}
 
+.resume-time{
+  font-size: 25px;
+  padding-bottom: 8%;
+  margin-top: -5px;
+}
+
+.hrs{
+  font-size: 15px;
+  padding-bottom: 8%;
+  margin-top: -15px;
 }
 
 .time {
@@ -117,34 +153,43 @@ span {
   text-align: right;
   font-weight: bold;
   color: #8E8E93;
-  Width: 25%;
-  margin-right:20px;
+  Width: 88px;
+  margin:3px 15px 0 0;
   margin-top: 3px;
+  float: right;
 }
-
 
 .eta {
   font-size: 29px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: baseline;
+  justify-content: center;
   font-weight: bold;
   color: #8E8E93;
   width: 25%;
-  text-align: center;
-  padding: 15px 0 20px 0;
-
-
+  vertical-align: text-bottom;
+  margin-bottom: 1%;
+  height: 73px;
+  position: relative;
 
 }
 
  .stop-badge {
    font-size: 29px;
-   display: inline-block;
+   display: flex;
    align-items: left;
    text-align: left;
    font-weight: bold;
    color: #8E8E93;
    width: 45%;
-   padding-top: 5%;
+   padding: 20px 0 10px 0;
+   margin-bottom: 1%;
+   vertical-align: baseline;
+   align-items: flex-start;
+   position: relative;
+
 
 }
 
