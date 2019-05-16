@@ -204,8 +204,9 @@ span {
 .home-bar{
   bottom: 0;
   position: fixed;
+  align-items: center;
   z-index: 2;
   width: 375px;
-  margin-left: 70px;
+
 
 }
