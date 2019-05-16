@@ -4,10 +4,15 @@ main {
   margin: auto;
 }
 
-header, footer {
-  background-color: 267f34;
-  color: #fff;
-  padding: 10px;
+header {
+background-color: white;
+color: #fff;
+padding: 10px;
+position: fixed;
+width: 375px;
+height: 86px;
+z-index: 1;
+
 }
 
 header div {
@@ -17,22 +22,26 @@ header div {
 
 .status-bar{
   width: 350px;
+  background-color: fff;
 }
 
 .back {
   color: #267f34;
   font-weight: bold;
-  width: 86%;
+  height: 22px;
+  width: 56px;
+  size: 25%;
   margin-bottom: -5px;
 }
 
 .location {
   text-align: center;
   font-size: 17px;
-  margin-left: 29px;
-  width: 50%;
+  margin-left: 44px;
+  width: 170px;
   color: #267f34;
   font-weight: bold;
+
 }
 
 li {
@@ -57,7 +66,6 @@ li {
   font-weight: bold;
   width: 100%;
   font-size: 15px;
-
 }
 
 span {
@@ -66,15 +74,15 @@ span {
 
 .stops-list {
   display: flex;
+  width: 375;
   border-bottom: 1px solid #DADADA;
   height: 73px;
   margin-bottom: 8PX;
-
 }
 
 .refresh {
   width: 18px;
-  margin-left: 30px;
+  margin-left: 20px;
   align-items: right;
   padding:10px 0 0 30px;
 }
@@ -89,8 +97,6 @@ span {
   width: 75%;
   flex-direction: column;
   margin-top:13px;
-
-
 }
 
 .min {
@@ -98,8 +104,6 @@ span {
   padding-bottom: 10%;
   margin-top: -10px;
   align-items: baseline;
-
-
 }
 
 .Route {
@@ -108,10 +112,8 @@ span {
   font-weight: bold;
   color: #8E8E93;
   width:88px;
-  margin-left: -15px;
-  margin: 9px 0 8px -15px;
+  margin: 9px 0 8px -13px;
   height: 15px;
-
 }
 
 .destination  {
@@ -122,8 +124,6 @@ span {
   margin:  9px 35px 8px 0;
   position: relative;
   height:15px;
-  
-
 }
 
 .resume-service {
@@ -138,22 +138,17 @@ span {
   align-content: flex-end;
   height: 36px;
   margin-top: 11px;
-
-
 }
 
 .resume-time{
   font-size: 15px;
   padding-bottom: 8%;
   margin-top: -5px;
-
 }
 
 .hrs{
   font-size: 15px;
   margin-top: -13px;
-
-
 }
 
 .time {
@@ -166,7 +161,6 @@ span {
   margin: 9px 20px 8px 15px;
   height: 12px;
   float: right;
-
 }
 
 .eta {
@@ -183,8 +177,6 @@ span {
   height: 36px;
   position: relative;
   margin-top: 14px;
-
-
 }
 
  .stop-badge {
@@ -199,15 +191,21 @@ span {
    position: relative;
    height: 36px;
    margin-top: 15px;
-
-
-}
+   margin-left: 3px;
+ }
 
 .map {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
-    height: 60%;
+    height: 100%;
+    margin-top: 100px;
     border-bottom: #000000;
+}
+
+.home-bar{
+  bottom: 0;
+  position: fixed;
+  z-index: 2;
+  width: 375px;
+  margin-left: 70px;
+
 }
